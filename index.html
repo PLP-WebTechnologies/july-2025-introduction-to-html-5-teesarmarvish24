@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- SEO: Descriptive title for search engines -->
+    <title>Teesar's To-Do List App - Organize Your Tasks</title>
+    <!-- SEO: Meta description for search engine results snippets -->
+    <meta
+      name="description"
+      content="A basic, accessible, and semantic HTML To-Do list to help you organize your daily tasks and boost productivity."
+    />
+    <!-- SEO: Keywords to help search engines understand content -->
+    <meta
+      name="keywords"
+      content="to-do list, task manager, productivity, HTML5, semantic, accessibility, organization, daily tasks"
+    />
+  </head>
+  <body>
+    <!-- Header: Contains the main title of the application -->
+    <header>
+      <!-- H1: The primary heading for the entire application -->
+      <h1>Teesar's To-Do List App</h1>
+    </header>
+
+    <!-- Main: The dominant content of the application -->
+    <main>
+      <!-- Section: For adding new tasks -->
+      <section id="add-task">
+        <!-- H2: Heading for the "Add New Task" section -->
+        <h3>Add New Task</h3>
+        <!-- Form: Semantically represents a user input form, even without JS functionality -->
+        <form aria-label="Add a new task">
+          <!-- Label: Associated with the input field for accessibility -->
+
+          <label for="new-task-input">Task Description:</label>
+
+          <!-- Input: Text field for entering a new task -->
+          <!-- aria-label provides a concise, accessible name for the input -->
+
+          <input
+            type="text"
+            id="new-task-input"
+            placeholder="e.g., Buy groceries"
+            aria-label="New task description"
+          />
+
+          <!-- Button: To submit the form (static in this HTML-only version) -->
+          <!-- aria-label provides an accessible name for the button's action -->
+
+          <button type="submit" aria-label="Add task to list">Add Task</button>
+        </form>
+      </section>
+
+      <!-- Section: For displaying the list of tasks -->
+      <section id="task-list">
+        <!-- H2: Heading for the "Tasks" section -->
+        <h3>Your Current Tasks</h3>
+        <!-- Unordered List: Semantically represents a list of items -->
+        <ul>
+          <!-- List Item: Represents a single task -->
+          <li>
+            <!-- Input: Checkbox to mark a task as complete (static) -->
+            <!-- disabled attribute indicates it's not interactive in this version -->
+            <!-- aria-labelledby associates the checkbox with its visible label -->
+            <input
+              type="checkbox"
+              id="task1"
+              disabled
+              aria-labelledby="task1-label"
+            />
+            <!-- Label: Associated with the checkbox for accessibility -->
+            <label id="task1-label" for="task1"
+              >Schedule doctor's appointment</label
+            >
+            <!-- Button: To delete a task (static) -->
+            <!-- aria-label provides an accessible name for the button's action -->
+            <button aria-label="Delete task: Schedule doctor's appointment">
+              Delete
+            </button>
+          </li>
+
+          <li>
+            <input
+              type="checkbox"
+              id="task2"
+              disabled
+              aria-labelledby="task2-label"
+            />
+            <label id="task2-label" for="task2">Finish report for work</label>
+            <button aria-label="Delete task: Finish report for work">
+              Delete
+            </button>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="task3"
+              disabled
+              aria-labelledby="task3-label"
+            />
+            <label id="task3-label" for="task3">Call mom</label>
+            <button aria-label="Delete task: Call mom">Delete</button>
+          </li>
+          <li>
+            <input
+              type="checkbox"
+              id="task4"
+              disabled
+              aria-labelledby="task4-label"
+            />
+            <label id="task4-label" for="task4">Plan weekend getaway</label>
+            <button aria-label="Delete task: Plan weekend getaway">
+              Delete
+            </button>
+          </li>
+        </ul>
+      </section>
+
+      <!-- Article: Explaining the benefits of a To-Do app for efficiency -->
+      <article id="efficiency-benefits">
+        <!-- H2: Heading for the article content -->
+        <h2>How a To-Do App Boosts Your Efficiency</h2>
+        <p>
+          A to-do list is a powerful tool for **productivity** and **stress
+          reduction**. It frees up mental space, letting you focus on tasks. It
+          helps **prioritize**, manage time, and provides a sense of
+          accomplishment.
+        </p>
+        <p>
+          Organizing tasks leads to **clarity**, **better time management**, and
+          **increased efficiency** in all aspects of life.
+        </p>
+      </article>
+
+      <!-- Section: Asking for description of the task (providing guidance on task descriptions) -->
+      <section id="task-description-guidance">
+        <!-- H2: Heading for this new section -->
+        <h2>Good Task Descriptions</h2>
+        <p>Clear task descriptions are key. They should be:</p>
+        <ul>
+          <li>
+            **Specific:** "Complete user authentication module for Project X."
+          </li>
+          <li>**Actionable:** Start with a verb (e.g., "Draft," "Call").</li>
+          <li>**Concise:** Get straight to the point.</li>
+          <li>**Realistic:** Ensure the task is achievable.</li>
+        </ul>
+        <p>Well-defined tasks reduce confusion and improve efficiency.</p>
+      </section>
+    </main>
+
+    <!-- Nav: Navigation for "About the Creator" -->
+    <nav aria-label="About the Creator">
+      <ul>
+        <li><a href="#about-creator">About the Creator</a></li>
+      </ul>
+    </nav>
+
+    <!-- Section: About the Creator (linked from the new nav tag) -->
+    <section id="about-creator">
+      <h2>About the Creator</h2>
+      <p>
+        This simple To-Do app was created by **teesarmarvish24**. It
+        demonstrates semantic HTML5, accessibility, and basic SEO. The goal was
+        to build a clean, structured, and accessible web page.
+      </p>
+      <p>
+        The creator is an **efficiency-maximisation enthusiast** and has
+        developed various strategies for improving daily living efficiency.
+      </p>
+    </section>
+
+    <!-- Footer: Contains copyright information -->
+    <footer>
+      <p>&copy; 2025 teesarmarvish24 To-Do List. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
